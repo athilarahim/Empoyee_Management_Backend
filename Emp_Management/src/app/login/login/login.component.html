@@ -1,0 +1,10 @@
+<form [formGroup]="addUserForm" (ngSubmit)="saveUser()" >
+    <h5>Sign in</h5>
+    <input [(ngModel)]="newID" placeholder="Employee ID" type="text" name="id" formControlName="EmployeeId" value="" />
+      <br/>
+    <input [(ngModel)]="newPass" placeholder="Password" type="password" name="pass" formControlName="Password" value=""/>
+      <br/>
+      
+
+  <button  type="submit">Login</button>
+</form>
